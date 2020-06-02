@@ -1,5 +1,7 @@
 # Multiple Choice Quiz Description.
 
+## link to page - https://proflonghair07.github.io/Homework_week4/
+
 ## This multiple choice quiz is made using three different files. An index html file, a css stylesheet, and a javascript script file.
 
 ## Aside from linking to the css and JS files the index page links to goooglefonts and to bootstrap. The top bar is made scalable by utilizing one of bootstraps nav-bars. The rest of the page is made up of various divs that are either shown or hidden by various functions in the javascript. Buttons are rendered using the button tag and displayed text is rendered using p tags. All elements manipulated by javascript contain unique id's.
