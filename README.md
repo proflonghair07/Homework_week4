@@ -2,7 +2,7 @@
 
 ## link to page - https://proflonghair07.github.io/Homework_week4/
 
-![](images/quiz.png)
+![](images/quiz.PNG)
 
 ## This multiple choice quiz is made using three different files. An index html file, a css stylesheet, and a javascript script file.
 
