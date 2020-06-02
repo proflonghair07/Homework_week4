@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Choice Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-local">
+        <a class="navbar-brand" onclick="showHighscore()">View High Scores</a>
+          <span class="navbar-text ml-auto">
+            Timer: <span id="timer">75</span>
+          </span>
+        </div>
+      </nav>
+    <main class="container">
+      <!-- Start Container -->
+      <div id="start-container">
+        <p>Coding Quiz</p>
+        <button id="start-button">Start Code Quiz</button>
+      </div>
+      <!-- Quiz Body -->
+      <div id="quiz">
+        <div id="questions"><p></p></div>
+        <div id="button-grid">
+        <button id="1" onclick="checkAnswer('one')"></button>
+        <button id="2" onclick="checkAnswer('two')"></button>
+        <button id="3" onclick="checkAnswer('three')"></button>
+        <button id="4" onclick="checkAnswer('four')"></button>
+        </div>
+        <div id="display-correct"></div>
+      </div>
+      <!-- End of quiz div -->
+      <div id="end-display">
+        <div id="score-input"></div>
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter your initials here."
+          name="intials"
+          id="initials"
+        />
+        <button id="submit-button">Submit Score</button>
+        <div id="display-error"></div>
+      </div>
+      <!-- High Score Container -->
+      <div id="highscore-container">
+        <div id="high-score-inner">
+          <div id="high-score-header">
+            <p>User Initials</p>
+            <p>Score</p>
+          </div>
+          <div id="highscore-initials"></div>
+          <div id="highscore-score"></div>
+        </div>
+        <div id="end-buttons">
+          <button id="go-back" onclick="restart()">Go Back</button>
+          <button id="clear-score" onclick="clearScore()">
+            Clear Highscores
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
